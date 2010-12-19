@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+	<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+	<xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+	<suite name="Keep Working! Suite" code="KWor" description="KeepWorking-specific scripting facilities">
+		<class name="application" code="capp" description="Keep Working! class" inherits="application">
+			<cocoa class="NSApplication" />
+			<!-- a single read-only property -->
+			<property name="current action" code="KWac" type="text" access="w" description="What you're doing">
+				<cocoa key="currentAction" />
+			</property>
+		</class>
+	</suite>
+</dictionary>
